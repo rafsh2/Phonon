@@ -11,3 +11,5 @@ To run the script, make sure the script file is executable (e.g., `chmod 700 scf
 * The script assumes that the job scheduler accepts the `qsub` command to submit job scripts.
 * The script assumes that the job scheduler uses the `job.sh` file as the job script file.
 
+# Harmonic phonon plot
+
