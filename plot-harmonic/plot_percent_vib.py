@@ -27,12 +27,10 @@ ax.plot(temps, conf, '-', color='g', label=r'$(\mathrm -T \Delta_{conf} S)$')
 ax.annotate('$\mathrm \% \Delta_{conf} S$ in $\mathrm \Delta_{mix} S$', xy=(800, conf[180]), xytext=(
     10, 18), textcoords='offset points', ha='left', va='top', fontsize=14)
 
-# ax.set_xlabel('Temperature (K)', fontsize=14)
+ax.set_xlabel('Temperature (K)', fontsize=14)
 # ax.set_ylabel(r'Helmholtz energy (meV/atom)', fontsize=14)
 # ax.legend()
 
-ax.axhline(y=0, color='black', linestyle='dashed',
-           alpha=0.6, lw=0.9)  # Plot the zero line
 # ax.set_title('volume-temperature', fontsize=18)
 ax.set_xlim(0, 1600)
 ax.set_ylim(0, 100)
