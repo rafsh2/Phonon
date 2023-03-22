@@ -40,7 +40,7 @@ for t, v in zip(temp, vol):
         continue
     vol_data = [item[0] for item in data_list]
     entr_data = [item[1] for item in data_list]
-    f = interp1d(vol_data, entr_data, kind='cubic')
+    f = interp1d(vol_data, entr_data, kind='cubic', fill_value='extrapolate')
     entr = f(v)
     result.append([t, v, entr])
 
